@@ -1,0 +1,261 @@
+@import '_variables.scss';
+
+.grid {
+    display: grid;
+    width: 99vw;
+    grid-template-columns: repeat(4, 24vw);
+    grid-template-rows: 98vh 20vh 100vh 85vh 100vh 100vh 80vh;
+    overflow: hidden;
+    margin-left: 0.5vw;
+    z-index: -1;
+}
+body {
+    overflow-x: hidden;
+}
+
+// section one
+.grid1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    background: $peach;
+    width: 98vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+// section one divider
+.grid1Divider {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    background: $peach;
+    width: 98vw;
+}
+ 
+// section two
+.grid2 {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1; 
+}
+.innergrid2 {
+    display: grid;
+    width: 98vw;
+    grid-template-columns: 20vw 25vw 25vw 28vw;
+    grid-template-rows: 100vh;
+    overflow-x: hidden;
+}
+.left2 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+.right2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+}
+
+// section three
+.grid3 {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    overflow: hidden;
+}
+.flex3 {
+    display: grid;
+    grid-template-columns: repeat(3, 33vw);
+    grid-template-rows: repeat(2, 42.5vh);
+    gap: 0px;
+    overflow-x: hidden;
+}
+
+
+ 
+// section four
+.grid4 {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+    z-index: 1;
+}
+.innergrid4 {
+    display: grid;
+    width: 98vw;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: 100vh;
+    overflow-x: hidden;
+}
+.left4 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+.right4 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+}
+
+// section five
+.grid5 {
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 1;
+    width: 98vw;
+    z-index: 0;
+    background: $peach;
+}
+
+@font-face {
+    font-family: 'maklight';
+    src: url('mak-webfont.woff2') format('woff2'),
+         url('mak-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'makbold';
+    src: url('mak-bold-webfont.woff2') format('woff2'),
+         url('mak-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.grid6 {
+    grid-column: 1 / span 4;
+    grid-row: 7 / span 1;
+    width: 98vw;
+    z-index: -3;
+    background: $peach;
+    .flex {
+        display: flex; flex-direction: row; justify-content: center;
+        width: 100vw;
+        height: 100%;
+        .flex1 {
+            width: 100%;
+            align-items: center; display: flex;
+            gap: 15px; flex-direction: column;
+            justify-content: center; height: 100%;
+            span {
+                font-family: 'maklight'; font-size: 35px; 
+                margin-top: 15px;
+            }
+            .circleHolder {
+                display: flex; flex-direction: row;
+                width: 300px;
+                justify-content: space-around;
+                .circle {
+                    width: 80px; height: 80px;
+                    border-radius: 50%; background: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 936px) {
+    .grid {
+        grid-template-rows: 100vh 30vh 200vh 220vh 200vh 100vh 80vh;
+    }
+    // section two 
+    .innergrid2 {
+        grid-template-rows: repeat(2, 100vh);
+    }
+    .left2 {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 4;
+    }
+    .right2 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 4;
+    }
+    
+    //section three
+    .flex3 {
+        display: grid;
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: 60vh 80vh 80vh;
+        gap: 0px;
+        overflow-x: hidden;
+
+    }
+    .innerflex1 {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+        h1 {
+            width: 100vw;
+            text-align: center;
+            margin-left: 0;
+        }
+        h2 {
+            width: 100vw;
+            text-align: center;
+            margin-left: 0;
+        }
+        h3 {
+            width: 95vw;
+            text-align: center;
+            padding-right: 5vw;
+            margin-top: 50px;
+        }
+    }
+    .innerflex2 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .innerflex3 {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+        .textContain {
+            width: 100vw;
+        }
+        .blurCircle3 {
+            margin-left: 62vw;
+        }
+    }
+
+    // section four
+    .innergrid4 {
+        grid-template-rows: repeat(2, 100vh);
+    }
+    .left4 {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 4;
+    }
+    .right4 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 4;
+    }
+}
+
+@media (max-width: 1150px) {
+    .grid5 {
+        .center {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        }
+        #slider {
+            width: 820px;
+            overflow: hidden;
+            margin-left: -80px;
+            z-index: -1;
+        }
+    }
+}
+@media (max-width: 770px) {
+    .grid5 {
+        .center {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        }
+        #slider {
+            width: 400px;
+            overflow: hidden;
+            margin-left: -70px;
+            z-index: -1;
+        }
+        .slide:nth-child(1) {
+            margin-left: 30px;
+        }
+    }
+}
+

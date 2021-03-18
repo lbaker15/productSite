@@ -1,0 +1,127 @@
+@import '_variables.scss';
+.gsapElTwo {
+    width: 100vw;
+    height: 100vh;
+    background: $red;
+    position: absolute;
+    height: 120vh;
+    transform-origin: top;
+    z-index: 900000;
+    margin-top: -120vh;
+    margin-left: -1vw;
+    display: none;
+}
+.right2 {
+    z-index: -6;
+    background: $peach;
+    .text {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        text-align: right;
+        padding-right: 100px;
+        z-index: 100;
+        h1 {
+            font-family: 'makLight';
+            margin-top: 120px;
+            font-size: 70px;
+            font-weight: 500;
+            color: black;
+        }
+        h2 {
+            font-family: 'makLight';
+            font-weight: 500;
+            font-size: 70px;
+            font-style: italic;
+            color: $blue;
+            opacity: 0.7;
+        }
+        h3 {
+            font-size: 14px;
+            width: 300px;
+            float: right;
+            margin-top: 100px;
+            color: black;
+        }
+    }
+    .blurCircle2 {
+        // width: 100px;
+        // height: 100px;
+        // background: $blue;
+        // filter: blur(20px);
+        // opacity: 0.65;
+        // border-radius: 50%;
+        // position: absolute;
+        // margin-top: -370px;
+        // margin-left: 37.5vw;
+        // z-index: -1;
+    }
+}
+.left2 {
+    background: $peach;
+    z-index: -5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+    .one {
+        border: 3px solid $blue;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 350px;
+        height: 50px;
+        margin-left: 100px;
+    }
+    img {
+        border: 10px solid white;
+        width: 350px;
+        height: 450px;
+        margin-left: 100px;
+        margin-top: -3px;
+        border-radius: 5px;
+        padding: 0px;
+        z-index: 3;
+    }
+    .position {
+        position: absolute;
+    }
+    .twoSec1 {
+        width: 350px;
+        height: 450px;
+        border-radius: 5px;
+        margin-left: 50px;
+        border: 3px solid $lightYell;
+        margin-top: -3px;
+        background: $lightYell;
+        z-index: 1;
+        margin-top: -50px;
+        // display: none;
+    }
+    .threeSec1 {
+        width: 350px;
+        height: 450px;
+        border-radius: 5px;
+        margin-left: 0px;
+        border: 3px solid $pinkpurple;
+        margin-top: -3px;
+        background: $pinkpurple;
+        z-index: -2;
+        margin-top: -100px;
+        // display: none;
+    }
+    .fourSec1 {
+        width: 350px;
+        height: 450px;
+        border-radius: 5px;
+        margin-left: -50px;
+        border: 3px solid $blue;
+        margin-top: -3px;
+        background: $blue;
+        z-index: -3;
+        margin-top: -150px;
+  
+    }
+}

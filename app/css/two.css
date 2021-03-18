@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+.gsapElTwo {
+  width: 100vw;
+  height: 100vh;
+  background: #FF1235;
+  position: absolute;
+  height: 120vh;
+  transform-origin: top;
+  z-index: 900000;
+  margin-top: -120vh;
+  margin-left: -1vw;
+  display: none; }
+
+.right2 {
+  z-index: -6;
+  background: #ffd9d9; }
+  .right2 .text {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 100px;
+    z-index: 100; }
+    .right2 .text h1 {
+      font-family: 'makLight';
+      margin-top: 120px;
+      font-size: 70px;
+      font-weight: 500;
+      color: black; }
+    .right2 .text h2 {
+      font-family: 'makLight';
+      font-weight: 500;
+      font-size: 70px;
+      font-style: italic;
+      color: #4100e6;
+      opacity: 0.7; }
+    .right2 .text h3 {
+      font-size: 14px;
+      width: 300px;
+      float: right;
+      margin-top: 100px;
+      color: black; }
+
+.left2 {
+  background: #ffd9d9;
+  z-index: -5;
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+  .left2 .col {
+    display: flex;
+    flex-direction: column; }
+  .left2 .one {
+    border: 3px solid #4100e6;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 350px;
+    height: 50px;
+    margin-left: 100px; }
+  .left2 img {
+    border: 10px solid white;
+    width: 350px;
+    height: 450px;
+    margin-left: 100px;
+    margin-top: -3px;
+    border-radius: 5px;
+    padding: 0px;
+    z-index: 3; }
+  .left2 .position {
+    position: absolute; }
+  .left2 .twoSec1 {
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
+    margin-left: 50px;
+    border: 3px solid #f8ff94;
+    margin-top: -3px;
+    background: #f8ff94;
+    z-index: 1;
+    margin-top: -50px; }
+  .left2 .threeSec1 {
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
+    margin-left: 0px;
+    border: 3px solid #FFB0F8;
+    margin-top: -3px;
+    background: #FFB0F8;
+    z-index: -2;
+    margin-top: -100px; }
+  .left2 .fourSec1 {
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
+    margin-left: -50px;
+    border: 3px solid #4100e6;
+    margin-top: -3px;
+    background: #4100e6;
+    z-index: -3;
+    margin-top: -150px; }

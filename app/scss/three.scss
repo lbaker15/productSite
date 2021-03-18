@@ -1,0 +1,162 @@
+@import '_variables.scss';
+
+.innerflex1 {
+    background: $red;
+    border-radius: 0px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    h1 {
+        font-family: 'maklight';
+        font-size: 55px;
+        margin-left: 2.5vw;
+        margin-top: 50px;
+    }
+    h2 {
+        font-family: 'maklight';
+        font-size: 50px;
+        margin-left: 2.5vw;
+    }
+    h3 {
+        font-family: poppins;
+        font-size: 18px;
+        font-weight: 300;
+        width: 23.5vw;
+        margin-left: 2.5vw;
+        margin-top: 180px;
+    }
+}
+.innerflex2 {
+    background-image: url('../images/7.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+}
+.innerflex3 {
+    background: whitesmoke;
+    border-radius: 5px;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+    overflow: hidden;
+    z-index: -3;
+    .textContain {
+        width: 33vw;
+        overflow: hidden;
+        height: 110px;
+        margin-bottom: 0;
+        z-index: 100;
+    }
+    .textContain:nth-child(1) {
+        margin-top: -10px;
+    }
+    h1 {
+        font-family: poppins, sans-serif;
+        font-size: 100px;
+        width: 3500px;
+        line-height: 65px;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: black;
+        text-transform: uppercase;
+        z-index: 100;
+    }
+    h2 {
+        font-family: poppins, sans-serif;
+        font-size: 100px;
+        width: 3500px;
+        line-height: 65px;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: black;
+        opacity: 0.85;
+        text-transform: uppercase;
+        z-index: 100;
+    }
+    h3 {
+        font-family: poppins, sans-serif;
+        font-size: 100px;
+        width: 3500px;
+        line-height: 65px;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: black;
+        opacity: 0.7;
+        text-transform: uppercase;
+        z-index: 100;
+    }
+    h4 {
+        font-family: poppins, sans-serif;
+        font-size: 100px;
+        width: 3500px;
+        line-height: 65px;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: black;
+        opacity: 0.55;
+        text-transform: uppercase;
+        z-index: 100;
+    }
+    h5 {
+        font-family: poppins, sans-serif;
+        font-size: 100px;
+        width: 3500px;
+        line-height: 65px;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: black;
+        opacity: 0.4;
+        text-transform: uppercase;
+        z-index: 100;
+    }
+    h6 {
+        font-family: poppins, sans-serif;
+        font-size: 100px;
+        width: 3500px;
+        line-height: 65px;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: black;
+        opacity: 0.25;
+        text-transform: uppercase;
+        z-index: 100;
+    }
+    .blurCircle {
+        width: 200px;
+        height: 200px;
+        background: $blue;
+        filter: blur(20px);
+        opacity: 0.65;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 2vw;
+        z-index: -1;
+    }
+    .blurCircle2 {
+        width: 200px;
+        height: 100px;
+        background: $pinkpurple;
+        filter: blur(20px);
+        transform: rotate(-45deg);
+        opacity: 0.8;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 7vw;
+        z-index: -2;
+    }
+    .blurCircle3 {
+        width: 300px;
+        height: 300px;
+        background: $yellow;
+        filter: blur(40px);
+        opacity: 0.6;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 17vw;
+        z-index: -2;
+    }
+
+}

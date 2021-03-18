@@ -1,6 +1,9 @@
+@import '_variables.scss';
+
+//Pages
+@import './four.scss';
 @import './splash.scss';
-.test {
-    overflow-y: hidden;
-    color:black;
-    font-size: 40px; 
-}
+@import './two.scss';
+@import './three.scss';
+@import './five.scss';
+@import './content.scss';

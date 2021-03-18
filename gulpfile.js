@@ -6,7 +6,7 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
-var runSequence = require('run-sequence');
+var runSequence = require('gulp4-run-sequence');
 var del = require('del');
 
 gulp.task('browserSync', () => {
@@ -42,7 +42,7 @@ gulp.task('watch', gulp.parallel('browserSync', function (done){
 }));
 
 
-//Not working
+//Not sure it is minifying css or js so check this.
 gulp.task('useref', function(){
     return gulp.src('app/*.html')
       .pipe(useref())
@@ -51,6 +51,7 @@ gulp.task('useref', function(){
       .pipe(gulpIf('*.css', cssnano()))
       .pipe(gulp.dest('dist'))
 });
+//Not working
 gulp.task('images', function(){
   return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
   .pipe(cache(imagemin({
@@ -60,9 +61,12 @@ gulp.task('images', function(){
   .pipe(gulp.dest('dist/images'))
 });
 gulp.task('clean:dist', function() {
-    return del.sync('dist');
+    return new Promise((resolve) => {
+		del.sync('dist');
+		resolve()
+	})
   })
 gulp.task('build', function(done) {
-    runSequence('clean:dist', ['useref', 'images'], 
+    runSequence('clean:dist', ['useref'], 
     done())
 });
